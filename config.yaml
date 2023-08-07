@@ -1,0 +1,12 @@
+# Configuration used to generate manifests by Resource-Generator
+annotations: []
+containerEnv:
+  - name: 'FOO'
+    value: 'bar'
+  - name: 'TEAM'
+    value: 'configmap//my-config:team'
+env: dev
+image: examples/simple-deployment
+kpt:  true
+name: kubernetes
+deployment: true
